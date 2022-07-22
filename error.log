@@ -1,0 +1,2 @@
+2020-10-06 ERROR [http-apr-8080-exec-31] (FilterDispatcher.java:131) - java.lang.ArithmeticException: / by zero
+2020-10-06 ERROR [http-apr-8080-exec-34] (FilterDispatcher.java:130) - java.lang.ArithmeticException: / by zero
