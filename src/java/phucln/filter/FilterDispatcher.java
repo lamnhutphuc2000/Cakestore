@@ -19,7 +19,7 @@ import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServletRequest;
-import org.apache.log4j.BasicConfigurator;
+import javax.servlet.http.HttpServletResponse;
 import org.apache.log4j.Logger;
 
 /**
@@ -28,7 +28,7 @@ import org.apache.log4j.Logger;
  */
 public class FilterDispatcher implements Filter {
 
-    private Logger log = null;
+    Logger log;
     private static final boolean debug = true;
 
     // The filter configuration object we are associated with.  If
@@ -109,17 +109,19 @@ public class FilterDispatcher implements Filter {
         String url = "";
         ServletContext context = request.getServletContext();
 
-        log = Logger.getLogger(FilterDispatcher.class.getName());
-        BasicConfigurator.configure();
+        log = Logger.getLogger(this.getClass().getName());
 
         try {
+            if (uri.contains(".jpg") || uri.contains(".gif") || uri.contains(".png")) {
+                chain.doFilter(request, response);
+                return;
+            }
             int lastIndex = uri.lastIndexOf("/");
             String resource = uri.substring(lastIndex + 1);
 
-            int b = 5 / 0;
-
             ResourceBundle resourceBundle = (ResourceBundle) context.getAttribute("SITE_MAP");
             url = resourceBundle.getString(resource);
+
             if (url != null) {
                 RequestDispatcher rd = request.getRequestDispatcher(url);
                 rd.forward(request, response);
@@ -127,6 +129,10 @@ public class FilterDispatcher implements Filter {
                 chain.doFilter(request, response);
             }
         } catch (Throwable t) {
+            if (t.getMessage().contains("Can't find")) {
+                HttpServletResponse res = (HttpServletResponse) response;
+                res.sendRedirect("errorPage");
+            } 
             log.error(t);
         }
 

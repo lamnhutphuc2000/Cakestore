@@ -1,2 +1,488 @@
-2020-10-06 ERROR [http-apr-8080-exec-31] (FilterDispatcher.java:131) - java.lang.ArithmeticException: / by zero
-2020-10-06 ERROR [http-apr-8080-exec-34] (FilterDispatcher.java:130) - java.lang.ArithmeticException: / by zero
+2020-10-15 ERROR [http-apr-8080-exec-20] (FilterDispatcher.java:132) - org.apache.jasper.JasperException: An exception occurred processing JSP page /main.jsp at line 19
+
+16:         <h1>MENU</h1>
+17:         <c:set var="listProducts" value="${sessionScope.PRODUCT}}"/>
+18:         <c:forEach var="product" items="${listProducts}" varStatus="counter">
+19:             ${product.name}
+20:         </c:forEach>
+21:     </body>
+22: </html>
+
+
+Stacktrace:
+2020-10-15 ERROR [http-apr-8080-exec-11] (FilterDispatcher.java:132) - org.apache.jasper.JasperException: An exception occurred processing JSP page /main.jsp at line 19
+
+16:         <h1>MENU</h1>
+17:         <c:set var="listProducts" value="${sessionScope.product}}"/>
+18:         <c:forEach var="product" items="${listProducts}" varStatus="counter">
+19:             ${product.name}
+20:         </c:forEach>
+21:     </body>
+22: </html>
+
+
+Stacktrace:
+2020-10-15 ERROR [http-apr-8080-exec-22] (FilterDispatcher.java:132) - org.apache.jasper.JasperException: An exception occurred processing JSP page /main.jsp at line 19
+
+16:         <h1>MENU</h1>
+17:         <c:set var="listProducts" value="${requestScope.product}}"/>
+18:         <c:forEach var="product" items="${listProducts}" varStatus="counter">
+19:             ${product.name}
+20:         </c:forEach>
+21:     </body>
+22: </html>
+
+
+Stacktrace:
+2020-10-15 ERROR [http-apr-8080-exec-34] (FilterDispatcher.java:132) - org.apache.jasper.JasperException: An exception occurred processing JSP page /main.jsp at line 20
+
+17:         <c:set var="listProducts" value="${requestScope.listProduct}}"/>
+18:         <c:forEach var="product" items="${listProducts}" varStatus="counter">
+19:             meo con
+20:             ${product.name}
+21:         </c:forEach>
+22:     </body>
+23: </html>
+
+
+Stacktrace:
+2020-10-15 ERROR [http-apr-8080-exec-9] (FilterDispatcher.java:132) - org.apache.jasper.JasperException: An exception occurred processing JSP page /main.jsp at line 20
+
+17:         <c:set var="listProducts" value="${requestScope.listProduct}}"/>
+18:         <c:forEach var="product" items="${listProducts}" varStatus="counter">
+19:             meo con
+20:             ${product.name}
+21:         </c:forEach>
+22:     </body>
+23: </html>
+
+
+Stacktrace:
+2020-10-15 ERROR [http-apr-8080-exec-8] (FilterDispatcher.java:132) - org.apache.jasper.JasperException: javax.el.PropertyNotFoundException: Property 'name' not found on type java.lang.String
+2020-10-15 ERROR [http-apr-8080-exec-11] (FilterDispatcher.java:132) - org.apache.jasper.JasperException: An exception occurred processing JSP page /main.jsp at line 20
+
+17:         <c:set var="listProducts" value="${requestScope.listProduct}}"/>
+18:         <c:forEach var="product" items="${listProducts}" varStatus="counter">
+19:             meo con
+20:             <div>${product.productID}</div>
+21:         </c:forEach>
+22:     </body>
+23: </html>
+
+
+Stacktrace:
+2020-10-17 ERROR [http-apr-8080-exec-9] (FilterDispatcher.java:132) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key SearchProductServlet
+2020-10-17 ERROR [http-apr-8080-exec-8] (FilterDispatcher.java:132) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key SearchProductServlet
+2020-10-17 ERROR [http-apr-8080-exec-12] (FilterDispatcher.java:132) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key SearchProductServlet
+2020-10-17 ERROR [http-apr-8080-exec-17] (FilterDispatcher.java:132) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key SearchProductServlet
+2020-10-17 ERROR [http-apr-8080-exec-22] (FilterDispatcher.java:132) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key SearchProductServlet
+2020-10-17 ERROR [http-apr-8080-exec-17] (FilterDispatcher.java:132) - org.apache.jasper.JasperException: An exception occurred processing JSP page /main.jsp at line 23
+
+20:                 <div>${product.name}</div>
+21:             </c:forEach>
+22:         </c:if>
+23:         <c:otherwise>
+24:             Can not find any cake!
+25:         </c:otherwise>
+26:     </body>
+
+
+Stacktrace:
+2020-10-17 ERROR [http-apr-8080-exec-27] (FilterDispatcher.java:132) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key SearchProductServlet
+2020-10-17 ERROR [http-apr-8080-exec-22] (FilterDispatcher.java:132) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key SearchProductServlet
+2020-10-17 ERROR [http-apr-8080-exec-34] (FilterDispatcher.java:132) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key SearchProductServlet
+2020-10-17 ERROR [http-apr-8080-exec-31] (FilterDispatcher.java:132) - org.apache.jasper.JasperException: javax.servlet.ServletException: javax.servlet.jsp.JspTagException: Don't know how to iterate over supplied "items" in &lt;forEach&gt;
+2020-10-17 ERROR [http-apr-8080-exec-37] (FilterDispatcher.java:132) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key SearchProductServlet
+2020-10-17 ERROR [http-apr-8080-exec-59] (FilterDispatcher.java:132) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key SearchProductServlet
+2020-10-17 ERROR [http-apr-8080-exec-62] (FilterDispatcher.java:132) - java.lang.NumberFormatException: null
+2020-10-17 ERROR [http-apr-8080-exec-56] (FilterDispatcher.java:132) - java.lang.NumberFormatException: null
+2020-10-17 ERROR [http-apr-8080-exec-66] (FilterDispatcher.java:132) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key SearchProductServlet
+2020-10-17 ERROR [http-apr-8080-exec-58] (SearchProductServlet.java:84) - com.microsoft.sqlserver.jdbc.SQLServerException: Invalid column name 'name'.
+2020-10-17 ERROR [http-apr-8080-exec-73] (FilterDispatcher.java:132) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key SearchProductServlet
+2020-10-17 ERROR [http-apr-8080-exec-94] (FilterDispatcher.java:132) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key searchProduct;jsessionid=0285E8F2DFC29222BA162FABBB9DC096
+2020-10-17 ERROR [http-apr-8080-exec-89] (FilterDispatcher.java:132) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key searchProduct;jsessionid=8351192458DBDDF1A6B0635119E95B6A
+2020-10-17 ERROR [http-apr-8080-exec-103] (FilterDispatcher.java:132) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key searchProduct;jsessionid=E5D84638625B63BE1072FF52412F150D
+2020-10-17 ERROR [http-apr-8080-exec-197] (FilterDispatcher.java:132) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key searchProduct;jsessionid=0B871CEDA7D9B6AE9946DBCC47022C02
+2020-10-17 ERROR [http-apr-8080-exec-197] (FilterDispatcher.java:132) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key searchProduct;jsessionid=F03DB694405A288D0D2D9E784BF0AF5A
+2020-10-17 ERROR [http-apr-8080-exec-202] (FilterDispatcher.java:133) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key searchProduct;jsessionid=AEB7E91905AC577B9A910A39268FBC1B
+2020-10-17 ERROR [http-apr-8080-exec-310] (SearchProductServlet.java:114) - com.microsoft.sqlserver.jdbc.SQLServerException: Invalid column name 'N@P1'.
+2020-10-17 ERROR [http-apr-8080-exec-311] (SearchProductServlet.java:114) - com.microsoft.sqlserver.jdbc.SQLServerException: Invalid column name 'N@P1'.
+2020-10-17 ERROR [http-apr-8080-exec-314] (SearchProductServlet.java:114) - com.microsoft.sqlserver.jdbc.SQLServerException: Invalid column name 'N@P1'.
+2020-10-17 ERROR [http-apr-8080-exec-314] (SearchProductServlet.java:114) - com.microsoft.sqlserver.jdbc.SQLServerException: Incorrect syntax near '@P1'.
+2020-10-18 ERROR [http-apr-8080-exec-101] (FilterDispatcher.java:132) - org.apache.jasper.JasperException: /main.jsp (line: 167, column: 8) The end tag "&lt;/c:if" is unbalanced
+2020-10-18 ERROR [http-apr-8080-exec-250] (FilterDispatcher.java:132) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key UpdateProductServlet
+2020-10-18 ERROR [http-apr-8080-exec-13] (FilterDispatcher.java:132) - org.apache.jasper.JasperException: <h3>Validation error messages from TagLibraryValidator for c in /main.jsp</h3><p>84: Invalid use of "param" tag outside legitimate parent tag</p>
+2020-10-18 ERROR [http-apr-8080-exec-24] (FilterDispatcher.java:132) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key createNewProduct.jsp
+2020-10-18 ERROR [http-apr-8080-exec-27] (FilterDispatcher.java:132) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key createNewProduct.jsp
+2020-10-18 ERROR [http-apr-8080-exec-25] (FilterDispatcher.java:132) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key createNewProduct.jsp
+2020-10-18 ERROR [http-apr-8080-exec-26] (FilterDispatcher.java:132) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key createNewProduct.jsp
+2020-10-18 ERROR [http-apr-8080-exec-172] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 1
+2020-10-18 ERROR [http-apr-8080-exec-177] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 10
+2020-10-18 ERROR [http-apr-8080-exec-166] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 9
+2020-10-18 ERROR [http-apr-8080-exec-179] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 15
+2020-10-18 ERROR [http-apr-8080-exec-177] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 14
+2020-10-18 ERROR [http-apr-8080-exec-172] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 13
+2020-10-18 ERROR [http-apr-8080-exec-175] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 12
+2020-10-18 ERROR [http-apr-8080-exec-174] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 11
+2020-10-18 ERROR [http-apr-8080-exec-173] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 18
+2020-10-18 ERROR [http-apr-8080-exec-179] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 2
+2020-10-18 ERROR [http-apr-8080-exec-178] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 19
+2020-10-18 ERROR [http-apr-8080-exec-176] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 16
+2020-10-18 ERROR [http-apr-8080-exec-180] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 17
+2020-10-18 ERROR [http-apr-8080-exec-174] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 4
+2020-10-18 ERROR [http-apr-8080-exec-172] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 22
+2020-10-18 ERROR [http-apr-8080-exec-175] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 3
+2020-10-18 ERROR [http-apr-8080-exec-181] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 20
+2020-10-18 ERROR [http-apr-8080-exec-177] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 21
+2020-10-18 ERROR [http-apr-8080-exec-172] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 5
+2020-10-18 ERROR [http-apr-8080-exec-179] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 1
+2020-10-18 ERROR [http-apr-8080-exec-175] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 10
+2020-10-18 ERROR [http-apr-8080-exec-178] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 9
+2020-10-18 ERROR [http-apr-8080-exec-174] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 15
+2020-10-18 ERROR [http-apr-8080-exec-173] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 14
+2020-10-18 ERROR [http-apr-8080-exec-172] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 13
+2020-10-18 ERROR [http-apr-8080-exec-176] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 12
+2020-10-18 ERROR [http-apr-8080-exec-180] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 11
+2020-10-18 ERROR [http-apr-8080-exec-178] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 2
+2020-10-18 ERROR [http-apr-8080-exec-177] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 19
+2020-10-18 ERROR [http-apr-8080-exec-175] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 18
+2020-10-18 ERROR [http-apr-8080-exec-179] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 16
+2020-10-18 ERROR [http-apr-8080-exec-181] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 17
+2020-10-18 ERROR [http-apr-8080-exec-180] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 4
+2020-10-18 ERROR [http-apr-8080-exec-176] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 3
+2020-10-18 ERROR [http-apr-8080-exec-172] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 22
+2020-10-18 ERROR [http-apr-8080-exec-173] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 21
+2020-10-18 ERROR [http-apr-8080-exec-174] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 20
+2020-10-18 ERROR [http-apr-8080-exec-177] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 5
+2020-10-18 ERROR [http-apr-8080-exec-175] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 1
+2020-10-18 ERROR [http-apr-8080-exec-172] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 10
+2020-10-18 ERROR [http-apr-8080-exec-174] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 9
+2020-10-18 ERROR [http-apr-8080-exec-180] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 15
+2020-10-18 ERROR [http-apr-8080-exec-176] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 14
+2020-10-18 ERROR [http-apr-8080-exec-177] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 13
+2020-10-18 ERROR [http-apr-8080-exec-179] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 12
+2020-10-18 ERROR [http-apr-8080-exec-181] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 11
+2020-10-18 ERROR [http-apr-8080-exec-174] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 2
+2020-10-18 ERROR [http-apr-8080-exec-178] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 19
+2020-10-18 ERROR [http-apr-8080-exec-173] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 18
+2020-10-18 ERROR [http-apr-8080-exec-172] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 16
+2020-10-18 ERROR [http-apr-8080-exec-175] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 17
+2020-10-18 ERROR [http-apr-8080-exec-178] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 4
+2020-10-18 ERROR [http-apr-8080-exec-179] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 3
+2020-10-18 ERROR [http-apr-8080-exec-177] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 22
+2020-10-18 ERROR [http-apr-8080-exec-180] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 20
+2020-10-18 ERROR [http-apr-8080-exec-176] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 21
+2020-10-18 ERROR [http-apr-8080-exec-175] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 13
+2020-10-18 ERROR [http-apr-8080-exec-181] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 12
+2020-10-18 ERROR [http-apr-8080-exec-180] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 11
+2020-10-18 ERROR [http-apr-8080-exec-177] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 9
+2020-10-18 ERROR [http-apr-8080-exec-179] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 10
+2020-10-18 ERROR [http-apr-8080-exec-178] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 1
+2020-10-18 ERROR [http-apr-8080-exec-173] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 5
+2020-10-18 ERROR [http-apr-8080-exec-175] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 17
+2020-10-18 ERROR [http-apr-8080-exec-176] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 16
+2020-10-18 ERROR [http-apr-8080-exec-174] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 15
+2020-10-18 ERROR [http-apr-8080-exec-172] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 14
+2020-10-18 ERROR [http-apr-8080-exec-183] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 13
+2020-10-18 ERROR [http-apr-8080-exec-182] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 12
+2020-10-18 ERROR [http-apr-8080-exec-177] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 11
+2020-10-18 ERROR [http-apr-8080-exec-173] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 9
+2020-10-18 ERROR [http-apr-8080-exec-178] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 10
+2020-10-18 ERROR [http-apr-8080-exec-179] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 1
+2020-10-18 ERROR [http-apr-8080-exec-180] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 19
+2020-10-18 ERROR [http-apr-8080-exec-181] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 18
+2020-10-18 ERROR [http-apr-8080-exec-183] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 19
+2020-10-18 ERROR [http-apr-8080-exec-172] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 18
+2020-10-18 ERROR [http-apr-8080-exec-174] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 17
+2020-10-18 ERROR [http-apr-8080-exec-175] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 16
+2020-10-18 ERROR [http-apr-8080-exec-176] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 15
+2020-10-18 ERROR [http-apr-8080-exec-184] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 14
+2020-10-18 ERROR [http-apr-8080-exec-172] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 21
+2020-10-18 ERROR [http-apr-8080-exec-173] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 20
+2020-10-18 ERROR [http-apr-8080-exec-182] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 2
+2020-10-18 ERROR [http-apr-8080-exec-181] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 5
+2020-10-18 ERROR [http-apr-8080-exec-180] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 4
+2020-10-18 ERROR [http-apr-8080-exec-178] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 22
+2020-10-18 ERROR [http-apr-8080-exec-179] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 3
+2020-10-18 ERROR [http-apr-8080-exec-172] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 1
+2020-10-18 ERROR [http-apr-8080-exec-178] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 10
+2020-10-18 ERROR [http-apr-8080-exec-177] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 9
+2020-10-18 ERROR [http-apr-8080-exec-179] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 15
+2020-10-18 ERROR [http-apr-8080-exec-173] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 14
+2020-10-18 ERROR [http-apr-8080-exec-181] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 13
+2020-10-18 ERROR [http-apr-8080-exec-184] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 12
+2020-10-18 ERROR [http-apr-8080-exec-175] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 11
+2020-10-18 ERROR [http-apr-8080-exec-182] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 2
+2020-10-18 ERROR [http-apr-8080-exec-176] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 19
+2020-10-18 ERROR [http-apr-8080-exec-174] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 18
+2020-10-18 ERROR [http-apr-8080-exec-178] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 16
+2020-10-18 ERROR [http-apr-8080-exec-183] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 17
+2020-10-18 ERROR [http-apr-8080-exec-173] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 4
+2020-10-18 ERROR [http-apr-8080-exec-177] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 22
+2020-10-18 ERROR [http-apr-8080-exec-179] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 3
+2020-10-18 ERROR [http-apr-8080-exec-172] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 21
+2020-10-18 ERROR [http-apr-8080-exec-180] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 20
+2020-10-18 ERROR [http-apr-8080-exec-181] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 5
+2020-10-18 ERROR [http-apr-8080-exec-177] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 1
+2020-10-18 ERROR [http-apr-8080-exec-185] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 10
+2020-10-18 ERROR [http-apr-8080-exec-184] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 9
+2020-10-18 ERROR [http-apr-8080-exec-181] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 15
+2020-10-18 ERROR [http-apr-8080-exec-172] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 14
+2020-10-18 ERROR [http-apr-8080-exec-177] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 13
+2020-10-18 ERROR [http-apr-8080-exec-187] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 12
+2020-10-18 ERROR [http-apr-8080-exec-186] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 11
+2020-10-18 ERROR [http-apr-8080-exec-184] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 2
+2020-10-18 ERROR [http-apr-8080-exec-185] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 18
+2020-10-18 ERROR [http-apr-8080-exec-180] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 19
+2020-10-18 ERROR [http-apr-8080-exec-179] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 17
+2020-10-18 ERROR [http-apr-8080-exec-182] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 16
+2020-10-18 ERROR [http-apr-8080-exec-186] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 4
+2020-10-18 ERROR [http-apr-8080-exec-187] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 3
+2020-10-18 ERROR [http-apr-8080-exec-177] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 22
+2020-10-18 ERROR [http-apr-8080-exec-172] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 21
+2020-10-18 ERROR [http-apr-8080-exec-181] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 20
+2020-10-18 ERROR [http-apr-8080-exec-184] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 5
+2020-10-18 ERROR [http-apr-8080-exec-187] (UpdateProductServlet.java:205) - javax.imageio.IIOException: Can't read input file!
+2020-10-18 ERROR [http-apr-8080-exec-177] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 1
+2020-10-18 ERROR [http-apr-8080-exec-179] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 10
+2020-10-18 ERROR [http-apr-8080-exec-186] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 9
+2020-10-18 ERROR [http-apr-8080-exec-184] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 11
+2020-10-18 ERROR [http-apr-8080-exec-172] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 16
+2020-10-18 ERROR [http-apr-8080-exec-189] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 15
+2020-10-18 ERROR [http-apr-8080-exec-187] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 14
+2020-10-18 ERROR [http-apr-8080-exec-180] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 13
+2020-10-18 ERROR [http-apr-8080-exec-185] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 12
+2020-10-18 ERROR [http-apr-8080-exec-189] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 20
+2020-10-18 ERROR [http-apr-8080-exec-172] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 2
+2020-10-18 ERROR [http-apr-8080-exec-186] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 19
+2020-10-18 ERROR [http-apr-8080-exec-188] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 18
+2020-10-18 ERROR [http-apr-8080-exec-179] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 17
+2020-10-18 ERROR [http-apr-8080-exec-185] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 5
+2020-10-18 ERROR [http-apr-8080-exec-184] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 4
+2020-10-18 ERROR [http-apr-8080-exec-181] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 3
+2020-10-18 ERROR [http-apr-8080-exec-180] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 22
+2020-10-18 ERROR [http-apr-8080-exec-187] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 21
+2020-10-18 ERROR [http-apr-8080-exec-186] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 1
+2020-10-18 ERROR [http-apr-8080-exec-188] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 10
+2020-10-18 ERROR [http-apr-8080-exec-180] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 9
+2020-10-18 ERROR [http-apr-8080-exec-179] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 11
+2020-10-18 ERROR [http-apr-8080-exec-191] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 12
+2020-10-18 ERROR [http-apr-8080-exec-180] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 17
+2020-10-18 ERROR [http-apr-8080-exec-181] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 16
+2020-10-18 ERROR [http-apr-8080-exec-188] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 15
+2020-10-18 ERROR [http-apr-8080-exec-186] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 14
+2020-10-18 ERROR [http-apr-8080-exec-189] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 13
+2020-10-18 ERROR [http-apr-8080-exec-180] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 21
+2020-10-18 ERROR [http-apr-8080-exec-190] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 20
+2020-10-18 ERROR [http-apr-8080-exec-179] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 2
+2020-10-18 ERROR [http-apr-8080-exec-187] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 19
+2020-10-18 ERROR [http-apr-8080-exec-185] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 18
+2020-10-18 ERROR [http-apr-8080-exec-188] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 4
+2020-10-18 ERROR [http-apr-8080-exec-190] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 3
+2020-10-18 ERROR [http-apr-8080-exec-191] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 22
+2020-10-18 ERROR [http-apr-8080-exec-186] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 5
+2020-10-18 ERROR [http-apr-8080-exec-192] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 1
+2020-10-18 ERROR [http-apr-8080-exec-188] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 10
+2020-10-18 ERROR [http-apr-8080-exec-187] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 9
+2020-10-18 ERROR [http-apr-8080-exec-181] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 15
+2020-10-18 ERROR [http-apr-8080-exec-193] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 14
+2020-10-18 ERROR [http-apr-8080-exec-186] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 13
+2020-10-18 ERROR [http-apr-8080-exec-191] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 12
+2020-10-18 ERROR [http-apr-8080-exec-189] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 11
+2020-10-18 ERROR [http-apr-8080-exec-190] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 19
+2020-10-18 ERROR [http-apr-8080-exec-187] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 2
+2020-10-18 ERROR [http-apr-8080-exec-188] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 18
+2020-10-18 ERROR [http-apr-8080-exec-185] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 17
+2020-10-18 ERROR [http-apr-8080-exec-192] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 16
+2020-10-18 ERROR [http-apr-8080-exec-189] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 4
+2020-10-18 ERROR [http-apr-8080-exec-191] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 3
+2020-10-18 ERROR [http-apr-8080-exec-186] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 22
+2020-10-18 ERROR [http-apr-8080-exec-193] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 21
+2020-10-18 ERROR [http-apr-8080-exec-181] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 20
+2020-10-18 ERROR [http-apr-8080-exec-188] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 12
+2020-10-18 ERROR [http-apr-8080-exec-192] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 11
+2020-10-18 ERROR [http-apr-8080-exec-187] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 9
+2020-10-18 ERROR [http-apr-8080-exec-189] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 10
+2020-10-18 ERROR [http-apr-8080-exec-185] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 1
+2020-10-18 ERROR [http-apr-8080-exec-191] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 5
+2020-10-18 ERROR [http-apr-8080-exec-193] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 15
+2020-10-18 ERROR [http-apr-8080-exec-188] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 16
+2020-10-18 ERROR [http-apr-8080-exec-190] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 13
+2020-10-18 ERROR [http-apr-8080-exec-186] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 14
+2020-10-18 ERROR [http-apr-8080-exec-195] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 12
+2020-10-18 ERROR [http-apr-8080-exec-189] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 11
+2020-10-18 ERROR [http-apr-8080-exec-193] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 9
+2020-10-18 ERROR [http-apr-8080-exec-191] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 10
+2020-10-18 ERROR [http-apr-8080-exec-185] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 1
+2020-10-18 ERROR [http-apr-8080-exec-194] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 18
+2020-10-18 ERROR [http-apr-8080-exec-192] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 17
+2020-10-18 ERROR [http-apr-8080-exec-189] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 17
+2020-10-18 ERROR [http-apr-8080-exec-186] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 16
+2020-10-18 ERROR [http-apr-8080-exec-188] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 14
+2020-10-18 ERROR [http-apr-8080-exec-187] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 13
+2020-10-18 ERROR [http-apr-8080-exec-190] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 15
+2020-10-18 ERROR [http-apr-8080-exec-193] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 2
+2020-10-18 ERROR [http-apr-8080-exec-195] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 19
+2020-10-18 ERROR [http-apr-8080-exec-185] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 18
+2020-10-18 ERROR [http-apr-8080-exec-194] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 22
+2020-10-18 ERROR [http-apr-8080-exec-191] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 20
+2020-10-18 ERROR [http-apr-8080-exec-192] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 21
+2020-10-18 ERROR [http-apr-8080-exec-188] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 5
+2020-10-18 ERROR [http-apr-8080-exec-186] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 4
+2020-10-18 ERROR [http-apr-8080-exec-189] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 3
+2020-10-18 ERROR [http-apr-8080-exec-195] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 1
+2020-10-18 ERROR [http-apr-8080-exec-194] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 10
+2020-10-18 ERROR [http-apr-8080-exec-192] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 9
+2020-10-18 ERROR [http-apr-8080-exec-188] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 14
+2020-10-18 ERROR [http-apr-8080-exec-187] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 13
+2020-10-18 ERROR [http-apr-8080-exec-189] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 12
+2020-10-18 ERROR [http-apr-8080-exec-186] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 11
+2020-10-18 ERROR [http-apr-8080-exec-194] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 16
+2020-10-18 ERROR [http-apr-8080-exec-195] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 15
+2020-10-18 ERROR [http-apr-8080-exec-192] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 19
+2020-10-18 ERROR [http-apr-8080-exec-191] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 18
+2020-10-18 ERROR [http-apr-8080-exec-185] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 17
+2020-10-18 ERROR [http-apr-8080-exec-188] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 2
+2020-10-18 ERROR [http-apr-8080-exec-193] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 20
+2020-10-18 ERROR [http-apr-8080-exec-189] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 21
+2020-10-18 ERROR [http-apr-8080-exec-190] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 22
+2020-10-18 ERROR [http-apr-8080-exec-187] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 3
+2020-10-18 ERROR [http-apr-8080-exec-186] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 5
+2020-10-18 ERROR [http-apr-8080-exec-194] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 4
+2020-10-18 ERROR [http-apr-8080-exec-9] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 1
+2020-10-18 ERROR [http-apr-8080-exec-10] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 10
+2020-10-18 ERROR [http-apr-8080-exec-2] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 9
+2020-10-18 ERROR [http-apr-8080-exec-3] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 15
+2020-10-18 ERROR [http-apr-8080-exec-9] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 14
+2020-10-18 ERROR [http-apr-8080-exec-1] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 13
+2020-10-18 ERROR [http-apr-8080-exec-7] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 12
+2020-10-18 ERROR [http-apr-8080-exec-5] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 11
+2020-10-18 ERROR [http-apr-8080-exec-8] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 18
+2020-10-18 ERROR [http-apr-8080-exec-2] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 2
+2020-10-18 ERROR [http-apr-8080-exec-6] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 19
+2020-10-18 ERROR [http-apr-8080-exec-4] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 16
+2020-10-18 ERROR [http-apr-8080-exec-10] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 17
+2020-10-18 ERROR [http-apr-8080-exec-7] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 3
+2020-10-18 ERROR [http-apr-8080-exec-1] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 22
+2020-10-18 ERROR [http-apr-8080-exec-5] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 4
+2020-10-18 ERROR [http-apr-8080-exec-9] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 21
+2020-10-18 ERROR [http-apr-8080-exec-3] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 20
+2020-10-18 ERROR [http-apr-8080-exec-8] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 5
+2020-10-18 ERROR [http-apr-8080-exec-1] (UpdateProductServlet.java:208) - javax.imageio.IIOException: Can't read input file!
+2020-10-18 ERROR [http-apr-8080-exec-5] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 1
+2020-10-18 ERROR [http-apr-8080-exec-7] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 10
+2020-10-18 ERROR [http-apr-8080-exec-10] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 9
+2020-10-18 ERROR [http-apr-8080-exec-4] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 15
+2020-10-18 ERROR [http-apr-8080-exec-1] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 14
+2020-10-18 ERROR [http-apr-8080-exec-6] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 13
+2020-10-18 ERROR [http-apr-8080-exec-2] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 12
+2020-10-18 ERROR [http-apr-8080-exec-8] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 11
+2020-10-18 ERROR [http-apr-8080-exec-7] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 19
+2020-10-18 ERROR [http-apr-8080-exec-10] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 2
+2020-10-18 ERROR [http-apr-8080-exec-3] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 18
+2020-10-18 ERROR [http-apr-8080-exec-9] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 16
+2020-10-18 ERROR [http-apr-8080-exec-5] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 17
+2020-10-18 ERROR [http-apr-8080-exec-7] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 4
+2020-10-18 ERROR [http-apr-8080-exec-9] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 3
+2020-10-18 ERROR [http-apr-8080-exec-1] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 22
+2020-10-18 ERROR [http-apr-8080-exec-6] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 21
+2020-10-18 ERROR [http-apr-8080-exec-4] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 20
+2020-10-18 ERROR [http-apr-8080-exec-10] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 5
+2020-10-18 ERROR [http-apr-8080-exec-6] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 1
+2020-10-18 ERROR [http-apr-8080-exec-1] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 10
+2020-10-18 ERROR [http-apr-8080-exec-8] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 9
+2020-10-18 ERROR [http-apr-8080-exec-10] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 11
+2020-10-18 ERROR [http-apr-8080-exec-1] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 16
+2020-10-18 ERROR [http-apr-8080-exec-6] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 15
+2020-10-18 ERROR [http-apr-8080-exec-3] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 14
+2020-10-18 ERROR [http-apr-8080-exec-5] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 13
+2020-10-18 ERROR [http-apr-8080-exec-9] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 12
+2020-10-18 ERROR [http-apr-8080-exec-8] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 20
+2020-10-18 ERROR [http-apr-8080-exec-10] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 2
+2020-10-18 ERROR [http-apr-8080-exec-1] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 19
+2020-10-18 ERROR [http-apr-8080-exec-7] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 18
+2020-10-18 ERROR [http-apr-8080-exec-2] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 17
+2020-10-18 ERROR [http-apr-8080-exec-12] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 13
+2020-10-18 ERROR [http-apr-8080-exec-11] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 12
+2020-10-18 ERROR [http-apr-8080-exec-9] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 11
+2020-10-18 ERROR [http-apr-8080-exec-5] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 9
+2020-10-18 ERROR [http-apr-8080-exec-10] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 10
+2020-10-18 ERROR [http-apr-8080-exec-8] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 1
+2020-10-18 ERROR [http-apr-8080-exec-3] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 3
+2020-10-18 ERROR [http-apr-8080-exec-6] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 22
+2020-10-18 ERROR [http-apr-8080-exec-4] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 21
+2020-10-18 ERROR [http-apr-8080-exec-11] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 19
+2020-10-18 ERROR [http-apr-8080-exec-12] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 18
+2020-10-18 ERROR [http-apr-8080-exec-2] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 17
+2020-10-18 ERROR [http-apr-8080-exec-1] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 16
+2020-10-18 ERROR [http-apr-8080-exec-7] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 15
+2020-10-18 ERROR [http-apr-8080-exec-13] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 14
+2020-10-18 ERROR [http-apr-8080-exec-5] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 21
+2020-10-18 ERROR [http-apr-8080-exec-12] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 20
+2020-10-18 ERROR [http-apr-8080-exec-9] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 2
+2020-10-18 ERROR [http-apr-8080-exec-4] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 5
+2020-10-18 ERROR [http-apr-8080-exec-8] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 4
+2020-10-18 ERROR [http-apr-8080-exec-3] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 22
+2020-10-18 ERROR [http-apr-8080-exec-6] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 3
+2020-10-18 ERROR [http-apr-8080-exec-4] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 1
+2020-10-18 ERROR [http-apr-8080-exec-5] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 10
+2020-10-18 ERROR [http-apr-8080-exec-9] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 9
+2020-10-18 ERROR [http-apr-8080-exec-3] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 15
+2020-10-18 ERROR [http-apr-8080-exec-5] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 14
+2020-10-18 ERROR [http-apr-8080-exec-10] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 13
+2020-10-18 ERROR [http-apr-8080-exec-12] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 12
+2020-10-18 ERROR [http-apr-8080-exec-15] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 11
+2020-10-18 ERROR [http-apr-8080-exec-9] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 2
+2020-10-18 ERROR [http-apr-8080-exec-14] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 19
+2020-10-18 ERROR [http-apr-8080-exec-4] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 18
+2020-10-18 ERROR [http-apr-8080-exec-13] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 16
+2020-10-18 ERROR [http-apr-8080-exec-16] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 17
+2020-10-18 ERROR [http-apr-8080-exec-15] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 4
+2020-10-18 ERROR [http-apr-8080-exec-13] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 3
+2020-10-18 ERROR [http-apr-8080-exec-10] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 22
+2020-10-18 ERROR [http-apr-8080-exec-5] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 21
+2020-10-18 ERROR [http-apr-8080-exec-3] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 20
+2020-10-18 ERROR [http-apr-8080-exec-9] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 5
+2020-10-18 ERROR [http-apr-8080-exec-14] (UpdateProductServlet.java:209) - javax.imageio.IIOException: Can't read input file!
+2020-10-18 ERROR [http-apr-8080-exec-13] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 1
+2020-10-18 ERROR [http-apr-8080-exec-10] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 10
+2020-10-18 ERROR [http-apr-8080-exec-4] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 9
+2020-10-18 ERROR [http-apr-8080-exec-14] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 15
+2020-10-18 ERROR [http-apr-8080-exec-16] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 14
+2020-10-18 ERROR [http-apr-8080-exec-17] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 13
+2020-10-18 ERROR [http-apr-8080-exec-9] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 12
+2020-10-18 ERROR [http-apr-8080-exec-3] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 11
+2020-10-18 ERROR [http-apr-8080-exec-16] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 2
+2020-10-18 ERROR [http-apr-8080-exec-4] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 19
+2020-10-18 ERROR [http-apr-8080-exec-14] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 18
+2020-10-18 ERROR [http-apr-8080-exec-10] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 17
+2020-10-18 ERROR [http-apr-8080-exec-18] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 16
+2020-10-18 ERROR [http-apr-8080-exec-15] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 22
+2020-10-18 ERROR [http-apr-8080-exec-17] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 20
+2020-10-18 ERROR [http-apr-8080-exec-9] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 21
+2020-10-18 ERROR [http-apr-8080-exec-3] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 5
+2020-10-18 ERROR [http-apr-8080-exec-16] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 4
+2020-10-18 ERROR [http-apr-8080-exec-5] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key 3
+2020-10-18 ERROR [http-apr-8080-exec-17] (UpdateProductServlet.java:209) - javax.imageio.IIOException: Can't read input file!
+2020-10-18 ERROR [http-apr-8080-exec-15] (UpdateProductServlet.java:209) - javax.imageio.IIOException: Can't read input file!
+2020-10-18 ERROR [http-apr-8080-exec-17] (FilterDispatcher.java:136) - org.apache.jasper.JasperException: /showCartPage.jsp (line: 61, column: 8) The end tag "&lt;/c:if" is unbalanced
+2020-10-18 ERROR [http-apr-8080-exec-61] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key loadProduct
+2020-11-03 ERROR [http-apr-8080-exec-1] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key login.html
+2020-11-03 ERROR [http-apr-8080-exec-7] (FilterDispatcher.java:136) - org.apache.jasper.JasperException: An exception occurred processing JSP page /showActiveUser.jsp at line 38
+
+35:                             <tr> 
+36:                                 <th>${user.userID}</th>
+37:                                 <th>${user.name}</th>
+38:                                 <th>${user.Phone}</th>
+39:                                 <th>${user.Address}</th>
+40:                                 <th>${user.Status}</th>
+41:                                 <th>${user.roleID}</th>  
+
+
+Stacktrace:
+2020-11-03 ERROR [http-apr-8080-exec-4] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key ShowActiveUserPage
+2020-11-03 ERROR [http-apr-8080-exec-8] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key ShowActiveUserPage
+2020-11-03 ERROR [http-apr-8080-exec-10] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key ShowActiveUserPage
+2020-11-03 ERROR [http-apr-8080-exec-1] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key ShowActiveUserPage
+2020-11-03 ERROR [http-apr-8080-exec-3] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key ShowActiveUserPage
+2020-11-03 ERROR [http-apr-8080-exec-4] (FilterDispatcher.java:136) - java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key ShowActiveUserPage

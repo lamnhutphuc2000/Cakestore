@@ -6,11 +6,18 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>Login page</title>
+        <title>Login Page</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     </head>
     <body>
-        <h1>Meow</h1>
+        <h1>Log in to Chop Chep Shop</h1>
+        <form action="login" method="POST">
+            Username <input type="text" name="txtUserID" value="" /> </br>
+            Password <input type="password" name="txtPassword" value="" /> </br>
+            <input type="submit" value="Log in" name="btAction" />
+        </form>
+        <a href="searchProduct">Back to Chop Chep Shop</a>
     </body>
 </html>

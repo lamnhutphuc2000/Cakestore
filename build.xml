@@ -7,8 +7,8 @@
 <!-- the Compile on Save feature is turned off for the project. -->
 <!-- You can turn off the Compile on Save (or Deploy on Save) setting -->
 <!-- in the project's Project Properties dialog box.-->
-<project name="SE140202_SE1407_J3LP0011" default="default" basedir=".">
-    <description>Builds, tests, and runs the project SE140202_SE1407_J3LP0011.</description>
+<project name="SE140202-SE1407-J3LP0011" default="default" basedir=".">
+    <description>Builds, tests, and runs the project SE140202-SE1407-J3LP0011.</description>
     <import file="nbproject/build-impl.xml"/>
     <!--
 
